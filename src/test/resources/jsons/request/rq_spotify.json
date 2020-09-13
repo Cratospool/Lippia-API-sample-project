@@ -1,0 +1,9 @@
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer BQDq2vMLohopEBF7h89KTLTN_1m1vxIxyVneYRARzS_0bWQqdTEospqVvGXSJ0o6je4hj1r1l43K4TYqfGE"
+
+  },
+  "urlParameters": {},
+  "endpoint": "v1/browse/new-releases"
+}

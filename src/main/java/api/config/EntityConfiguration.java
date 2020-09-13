@@ -1,9 +1,6 @@
 package api.config;
 
-import services.AnalysisService;
-import services.CategoriesService;
-import services.ResponseHeadersService;
-import services.UserService;
+import services.*;
 
 public enum EntityConfiguration {
 
@@ -33,7 +30,15 @@ public enum EntityConfiguration {
             return AnalysisService.class;
         }
 
+    },
+    NEW_RELEASES {
+        @Override
+        public Class<?> getEntityService() {
+            return NewReleasesService.class;
+        }
+
     };
+
 
     public abstract Class<?> getEntityService();
 }
