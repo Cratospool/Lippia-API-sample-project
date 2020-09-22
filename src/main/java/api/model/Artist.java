@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Artist {
 
+    @JsonProperty("popularity")
+    private int popularity;
     @JsonProperty("external_urls")
     private External_urls external_urls;
     @JsonProperty("href")
@@ -14,6 +16,15 @@ public class Artist {
     private String name;
     @JsonProperty("type")
     private String type;
+    @JsonProperty("followers")
+    private Followers followers;
+    @JsonProperty("genres")
+    private String[] genres;
+    @JsonProperty("images")
+    private Image[] images;
+    @JsonProperty("uri")
+    private String uri;
+
 
     public External_urls getExternal_urls() {
         return external_urls;
@@ -63,6 +74,35 @@ public class Artist {
         this.uri = uri;
     }
 
-    @JsonProperty("uri")
-    private String uri;
+    public Followers getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(Followers followers) {
+        this.followers = followers;
+    }
+
+    public String[] getGenres() {
+        return genres;
+    }
+
+    public void setGenres(String[] genres) {
+        this.genres = genres;
+    }
+
+    public Image[] getImages() {
+        return images;
+    }
+
+    public void setImages(Image[] images) {
+        this.images = images;
+    }
+
+    public int getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(int popularity) {
+        this.popularity = popularity;
+    }
 }

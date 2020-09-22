@@ -1,0 +1,8 @@
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer BQBQyvRPlTYwCeWrGsV0eAZ40khmO7qOGpp1ycvpltU_-VxTM_Ck1hPRea9Gp8u4zlw7dizdUtqbyZVGlsw"
+  },
+  "urlParameters": {},
+  "endpoint": "v1/artists/failId"
+}

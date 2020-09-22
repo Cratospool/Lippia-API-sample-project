@@ -28,7 +28,7 @@ public class CatSteps extends PageSteps {
 
     @And("los datos son correctos")
     public void losDatosSonCorrectos() {
-        Category[ ] categories = (Category[]) APIManager.getLastResponse().getResponse();
+        Category[] categories = (Category[]) APIManager.getLastResponse().getResponse();
         int size = categories.length;
         Assert.assertEquals(size,7);
     }

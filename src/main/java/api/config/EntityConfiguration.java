@@ -37,6 +37,20 @@ public enum EntityConfiguration {
             return NewReleasesService.class;
         }
 
+    },
+    ARTIST {
+        @Override
+        public Class<?> getEntityService() {
+            return ArtistService.class;
+        }
+
+    },
+    ERROR {
+        @Override
+        public Class<?> getEntityService() {
+            return ErrorService.class;
+        }
+
     };
 
 
